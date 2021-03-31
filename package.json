@@ -1,7 +1,7 @@
 {
     "name": "dinder-mufflin",
     "version": "1.0.0",
-    "description": "The Dinder Mufflin Toilet Paper Company Website",
+    "description": "The fictional Dinder Mufflin Toilet Paper Company website.",
     "main": "index.html",
     "directories": {
         "lib": "lib"
@@ -18,14 +18,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/TheMaxLin/cs-290-project.git"
+        "url": "git+https://github.com/TheMaxLin/dinder-mufflin.git"
     },
     "author": "Max Lin",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/TheMaxLin/cs-290-project/issues"
+        "url": "https://github.com/TheMaxLin/dinder-mufflin/issues"
     },
-    "homepage": "http://web.engr.oregonstate.edu/~linmax",
+    "homepage": "https://maxlin.dev/dinder-mufflin",
     "devDependencies": {
         "@babel/cli": "^7.8.4",
         "@babel/core": "^7.9.6",
