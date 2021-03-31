@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="css/main.css">
+  <!-- Font Awesome Kit -->
+  <script src="https://kit.fontawesome.com/77bfd5ed58.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-brand">
+        <span class="navbar-item">
+          <span class="fas fa-toilet-paper fa-2x" title="DMTPC"></span>
+        </span>
+        <span class="navbar-burger burger" data-target="navbarMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </div>
+      <div id="navbarMenu" class="navbar-menu">
+        <div class="navbar-start">
+          <div class="navbar-item">
+            <span id="company-name-navbar">DINDER MUFFLIN, INC</span>
+          </div>
+        </div>
+        <div class="navbar-end">
+          <a class="navbar-item" href="./">
+            Home
+          </a>
+          <a class="navbar-item" href="about.html">
+            About
+          </a>
+          <a class="navbar-item" href="staff.html">
+            Staff
+          </a>
+          <a class="navbar-item is-active" href="contact.html">
+            Contact Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Body -->
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <div class="content">
+            <h1 class="title content-header">Contact Us</h1>
+            <p>
+              To make a complaint, fill out the form below and nobody will get back to you.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns">
+        <div class="column is-11">
+          <div>
+            <form id="contactForm"
+                  class="box"
+                  action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php"
+                  method="POST">
+              <div class="field">
+                <label class="label">Name (required)</label>
+                <div class="control has-icons-right">
+                  <input id="name-field" class="input" type="text" name="name" placeholder="Conan O'Brien" required
+                         autofocus>
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label">Alias</label>
+                <div class="control has-icons-left has-icons-right">
+                  <input class="input" type="text" name="username" placeholder="conebone69">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-user"></i>
+                  </span>
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label">Email</label>
+                <div class="control has-icons-left has-icons-right">
+                  <input class="input" type="email" name="email" placeholder="cone@me.bro">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label">Date of incident</label>
+                <div class="control has-icons-left has-icons-right">
+                  <input class="input" type="date" name="date" value="1997-08-29">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-calendar"></i>
+                  </span>
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label">Subject</label>
+                <div class="control">
+                  <div class="select">
+                    <select id="subject" name="subject">
+                      <option value="">Choose one:</option>
+                      <option value="indescribable">Indescribable</option>
+                      <option value="mike">Prison Mike on the loose</option>
+                      <option value="chili">Chili con carnage</option>
+                      <option value="fire">Fire in the disco</option>
+                      <option value="skynet">Skynet has become self-aware</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label">Message</label>
+                <div class="control">
+                  <textarea class="textarea has-fixed-size" name="message"
+                            placeholder="Describe the situation in detail."></textarea>
+                </div>
+              </div>
+
+              <div class="field">
+                <div class="control">
+                  <label class="label">Is this an emergency?</label>
+                  <label class="radio">
+                    <input id="emergency-yes" type="radio" name="emergency" value="yes">
+                    Yes
+                  </label>
+                  <label class="radio">
+                    <input id="emergency-no" type="radio" name="emergency" value="no">
+                    No
+                  </label>
+                </div>
+              </div>
+
+              <div id="medical-assist-field" class="field is-hidden">
+                <div class="control">
+                  <label class="label">Do you require immediate medical asssistance?</label>
+                  <label class="radio">
+                    <input type="radio" name="question" value="yes">
+                    Yes
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="question" value="no">
+                    No
+                  </label>
+                </div>
+              </div>
+
+              <hr>
+
+              <div class="field">
+                <div class="control">
+                  <label class="checkbox">
+                    <input type="checkbox" required>
+                    I agree to the <a class="modal-button" data-target="terms-modal" href="#">terms and conditions</a>
+                  </label>
+                </div>
+              </div>
+
+              <div class="field is-grouped">
+                <div class="control">
+                  <button type="submit" form="contactForm" class="button is-link">Submit</button>
+                </div>
+                <div class="control">
+                  <button type="reset" class="button is-link is-light">Reset</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div id="terms-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content content">
+      <div class="box">
+        <h4>Terms and Conditions</h4>
+        <p>
+          "Blood alone moves the wheels of history! Have you ever asked yourselves in an hour of meditation, which
+          everyone finds during the day,how long we have been striving for greatness? Not only the years we've been at
+          war, the war of work, but from the moment as a child when we realized that the world could be conquered. It
+          has been a lifetime struggle. A never-ending fight. I say to you, and you will understand that it is a
+          privilege to fight! We are warriors! Salesmen of north-eastern Pennsylvania, I ask you once more: Rise and be
+          worthy of this historical hour! No revolution is worth anything unless it can defend itself! Some people will
+          tell you salesman is a bad word. They'll conjure up images of used car dealers and door to door charlatans.
+          This is our duty: to change their perception. I say salesmen... and women of the world unite! We must never
+          acquiesce for it is together, TOGETHER, THAT WE PREVAIL! We must never cede control of the motherland! For it
+          is together that [the audience] we prevail!" -Dwight Schrute
+        </p>
+        <p>
+          While you might intend that such additional attribution requirements to the user when used interactively with
+          that
+          entity. For the purposes of this License is intended to facilitate the commercial use of the license, the text
+          of
+          the Program. Recipients to identify the originator of the Standard or Modified Versions is governed by this
+          License), You must: (a) rename Your license so that the Modifications made by running the Work that has
+          contributed code or else can get the source code, which must be released under the terms of Paragraph 1 above
+          (including distributing this License (including the provisions in Section 3 below, for as long as the
+          conditions
+          specified above; in particular, your modified NetHack or use pieces of it in a reasonable fashion, credit the
+          author(s).
+        </p>
+        <p>
+          Where such notations are visible in the documentation and/or other materials provided with the requirements of
+          this License Agreement (except that you receive from any Contributor. You hereby assume sole responsibility to
+          secure any other combinations which include the Package, and Distribute the Modified Version. Agreement ,
+          including but not limited to, loss of goodwill, work stoppage, computer failure or malfunction, or any
+          subsequent
+          version of this Agreement and any other intellectual property rights (other than patent or other modifications
+          made to Python.
+        </p>
+        <p>
+          PSF is making the claim in sufficient detail that a Derived Program under the terms of this License.
+          Provisions
+          which, by their nature, must remain freely available from
+          <http: //www.php.net />". THIS SOFTWARE IS PROVIDED BY THE PHP DEVELOPMENT TEAM OR ITS CONTRIBUTORS BE LIABLE
+          FOR
+          ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES OR LOSSES, EVEN IF ADVISED OF THE WORK The
+          Work has the status `author-maintained' if the Program in a wiki, for example, indicating this in the Source
+          Code
+          version from the Public Domain or from the programs of this license place any restrictions on the Program),
+          the
+          recipient automatically receives a copy of the use or the recipients' rights or otherwise.
+        </p>
+        <p>
+          As a condition to, the modification, by any other entity. Apple and each file should have received copies, or
+          rights, from you that new knowledge has been made available to others. You are not mutually agreed upon in
+          writing
+          to pay any damages as a special exception, the "BeOpen Python" logos available at
+          http://www.pythonlabs.com/logos.html may be used for software interchange; or, c) Accompany it with the terms
+          and
+          conditions of this paragraph may be used as a result of this Agreement as released by IBM, including source
+          code,
+          fonts, documentation, graphics, sound etc.) and the code they affect. Such description must be sufficiently
+          detailed for a charge no more than one year after the cause of action arose. Each party waives its rights to
+          grant
+          more extensive warranty protection in exchange for a particular version of the Derived Work.
+        </p>
+        <p>
+          The conditions above are not mutually agreed upon in writing of such Contributor, if any, to grant the rights
+          that
+          you keep intact all notices in the file described in the Standard Version, or a Modified Version. Source Code.
+          If
+          it is Recipient's responsibility to acquire that license before distributing the Program by such Contributor
+          under
+          this Agreement as released at the www.python.org Internet site on August 4, 2000 ("Python 1.6b1"). Subject to
+          the
+          extent necessary to make it absolutely clear that any Modifications that you use may be rejected if the
+          requirements of this License or the recipients' rights relating to publishing the Source Code of the authors
+          in
+          a
+          lawsuit) alleging that the Work or Derivative Works thereof, that is normally needed for running or
+          interpreting
+          a
+          part or all third parties are not covered by the Copyright Holder. Version" means the Package, and Distribute
+          the
+          resulting aggregation provided that in whole or in any medium, provided that the original licensor to copy,
+          distribute and/or modify the terms of this License. The Free Software Foundation; either version 1.3 or later
+          is
+          part of the operating system on which the executable version, related documentation or collateral in which
+          Embedded Fonts from a proxy server on the Program is restricted in certain countries either by patents or
+          other
+          intellectual property rights (other than patent) owned or hereafter acquired, owned by or on different terms
+          from
+          this software for any purpose without restriction, modify the terms of this license.
+        </p>
+        <p>
+          You may do so in a reasonable copying fee for this Package itself. However, you may do so only on Your own
+          behalf,
+          and not by any Contributor that the above copyright notice, this list of authors may be incomplete or contain
+          inaccuracies. You expressly acknowledge and agree that any persons, including (but not limited to the version
+          of
+          the Covered Code in Executable form only if the requirements of Sections 1 through 9 of this License shall be
+          governed by and interpreted in all copies and that the phrases "Sun," "Sun Public License," or "SPL"../ or any
+          portion thereof, is at Your sole and entire risk. THE COVERED CODE, OR ANY DAMAGES WHATSOEVER RESULTING FROM
+          LOSS
+          OF DATA OR PROFITS, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE), CONTRACT, OR
+          OTHERWISE,
+          ARISING FROM, OUT OF THE COVERED CODE IS FREE OF CHARGE, THERE IS NO WARRANTY EXCEPT AS EXPRESSLY SET FORTH IN
+          THIS AGREEMENT, NEITHER RECIPIENT NOR ANY CONTRIBUTORS SHALL HAVE ANY LIABILITY FOR DEATH OR PERSONAL INJURY
+          RESULTING FROM LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+          LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, SHALL THE COPYRIGHT HOLDERS AND/OR OTHER
+          PARTIES
+          PROVIDE THE PROGRAM OR THE EXERCISE OF ANY KIND, EXPRESS OR IMPLIED WARRANTY AS TO THE WARRANTIES OF
+          MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE EXTENT PERMITTED BY YOUR LOCAL
+          LAW.
+          UNLESS REQUIRED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDER OR OTHER
+          DEALINGS
+          WITH THE SOFTWARE OR THE EXERCISE OF ANY REMEDY.
+        </p>
+        <p>
+          SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF LIABILITY EXCEPT AS EXPRESSLY SET FORTH IN THIS
+          AGREEMENT, THE PROGRAM TO OPERATE WITH ANY OTHER CONTRIBUTOR) ASSUME THE COST OF ALL NECESSARY SERVICING,
+          REPAIR
+          OR CORRECTION. IN NO EVENT SHALL STICHTING MATHEMATISCH CENTRUM DISCLAIMS ALL SUCH WARRANTIES, INCLUDING
+          WITHOUT
+          LIMITATION, WARRANTIES THAT THE OPERATION OF THE POSSIBILITY OF SUCH DAMAGES. THIS LIMITATION OF LIABILITY
+          EXCEPT
+          AS EXPRESSLY SET FORTH IN THIS AGREEMENT, NEITHER RECIPIENT NOR ANY CONTRIBUTORS SHALL HAVE BEEN INFORMED OF
+          THE
+          USE OF LICENSED PRODUCT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS LICENSE AGREEMENT.
+        </p>
+        <p>
+          DEFINITIONS "Contribution" means: in the executable runs, unless that component itself accompanies the
+          executable.
+          If distribution of a modified component is made available online or by copying, installing or otherwise
+          compete
+          with, Modifications, Larger Works, technology or products that You are responsible for claims brought by a
+          Contributor if it was added to MirBSD. It has been published under a different license, that Derived Work can
+          be
+          a
+          Modified Version.
+        </p>
+        <p>
+          Work (for example, by posting to comp.text.tex.) If the Work as distributed under the terms and conditions for
+          copying, distributing or modifying the Program is covered in a location (such as notifying appropriate mailing
+          lists or newsgroups) reasonably calculated to inform those who receive copies directly or indirectly, to
+          anyone
+          other than this License, or on behalf of the Contribution. No hardware per se is licensed hereunder. Recipient
+          understands that although each Contributor grants the licenses granted to You a world-wide, royalty-free,
+          non-exclusive license, subject to these terms so they know their rights. We protect your rights under this
+          License.
+        </p>
+        <p>
+          In order to preserve the integrity of the Program. You may use or the like. Document File" shall mean anyone
+          who
+          receives the Licensed Product, and (iv) you make an `intention announcement' as described in 2b. Work or out
+          of
+          inability to use such covered code under the terms and conditions.
+        </p>
+        <p>
+          You may do so in a commercial product offering, such Contributor as a relevant directory file) where a Digital
+          Document File then such Recipient's patent(s), then such Recipient's patent(s), then such Recipient shall have
+          no
+          further obligations under this Agreement shall be subject to the article or articles you contributed to, b)
+          through a medium customarily used for software interchange; or, b) Accompany it with full information as to
+          name
+          you as the Maintenance section was added in order to apply in other circumstances. It is provided in the
+          components of your work is released as a programmer) or your school, if any, must include a text file with the
+          CC-BY-SA license or settlement) prior to termination shall survive any termination of this License.
+          Notwithstanding Section 2.1(b) above, no patent license would not permit royalty-free redistribution of the
+          Licensed Program in object code or executable form with such an announcement, your work that is based on the
+          Program) on a volume of a modification, addition, deletion, replacement or any Contributor.
+        </p>
+        <p>
+          Disclaimer of Warranty. Unless required by Exhibit A as Original Code, a world-wide, royalty-free,
+          non-exclusive
+          license, subject to these terms so they know their rights. Also, for our own protection, we must make it clear
+          that your work is unrelated to TeX. The section `WHETHER AND HOW TO DISTRIBUTE WORKS UNDER THIS LICENSE',
+          below,
+          gives instructions, examples, and recommendations for authors who are considering distributing their works
+          under
+          this Agreement, and without further action by the Current Maintainer is reachable and agrees to cease use and
+          distribution of the Work The LPPL requires that the Source form of media cost, duplication charges, time of
+          its
+          contributors may be located on the Program), you indicate your acceptance of this License including, without
+          limitation, any warranties or conditions of this license agreement ("Agreement").
+        </p>
+        <p>
+          Any use, reproduction or distribution of Your modifications, or for combinations of some or all of its release
+          under this Agreement shall be reformed to the trademarks of Licensor or such Contributor has knowledge of
+          patent
+          infringement claim against Respondent alleging that Licensed Product has been published under a different
+          license.
+          You do not download or use pieces of it in new free programs; and that the Covered Code is a citizen of, or
+          Redistributing the Licensed Program as is without modification and transfer such copies, publicly transmit or
+          otherwise use Python alone or in the LEGAL file in all copies you make modifications or additions to the terms
+          of
+          this License, whose permissions for other Contributors. Therefore, if a third party.
+        </p>
+        <p>
+          Randomly generated legal gibberish from legalipsum.com
+        </p>
+      </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+
+
+  <!-- Footer -->
+  <footer class="footer has-text-centered">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-8-desktop is-offset-2-desktop">
+          <a href="https://www.facebook.com">
+            <span class="fab fa-facebook fa-2x" title="Facebook"></span>
+          </a>
+          <a href="https://www.twitter.com">
+            <span class="fab fa-twitter fa-2x" title="Twitter"></span>
+          </a>
+          <a href="https://www.youtube.com">
+            <span class="fab fa-youtube fa-2x" title="Youtube"></span>
+          </a>
+          <p class="credit">A parody inspired by the TV show 'The Office' from NBC Universal.</p>
+        </div>
+      </div>
+  </footer>
+  <script type="text/javascript" src="lib/main.js"></script>
+  <script type="text/javascript" src="lib/form.js"></script>
+</body>
+
+</html>

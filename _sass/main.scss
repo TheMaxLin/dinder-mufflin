@@ -1,0 +1,185 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Dokdo&display=swap');
+
+/*
+*****************
+* BULMA CUSTOMIZATION
+*****************
+*/
+$primary: black;
+$primary-invert: white;
+
+$navbar-background-color: $primary;
+$navbar-item-hover-background-color: $primary;
+$navbar-item-color: rgba(255, 255, 255, 0.7);
+$navbar-item-hover-color: $primary-invert;
+$navbar-item-active-color: $primary-invert;
+$footer-background-color: $primary;
+$footer-padding: 3rem 1.5rem 4rem;
+
+/*
+*****************
+* IMPORT BULMA
+*****************
+*/
+@import "../node_modules/bulma/bulma";
+
+/*
+*****************
+* CUSTOM STYLES
+*****************
+*/
+#company-name {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 0.25rem;
+    letter-spacing: 0.15rem;
+    line-height: 0.9;
+    font-weight: 500;
+}
+
+#company-name .first {
+    font-size: 5.75rem;
+    margin-left: 1.5rem;
+}
+
+#company-name .second {
+    font-size: 5rem;
+}
+
+#company-name .third {
+    display: inline-block;
+    color: darkgrey;
+    transform: rotate(90deg);
+    transform-origin: right;
+    font-size: 2rem;
+    margin-left: -4rem;
+}
+
+#company-name-sub {
+    font-family: Helvetica, sans-serif;
+    margin-bottom: 1rem;
+    letter-spacing: 0.25rem;
+    font-size: 1rem;
+}
+
+#company-name-navbar {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 0.1rem;
+    font-size: 1.5rem;
+    color: white;
+}
+
+html {
+    background-color: $primary;
+}
+
+body {
+    background-color: whitesmoke;
+    background-image: url("../img/paper.png");
+}
+
+.is-dokdo {
+    font-family: 'Dokdo', cursive !important;
+}
+
+.card figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    font-size: 0.75rem;
+}
+
+.card-footer {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.content-header {
+    display: inline-block;
+}
+
+.content-header::after {
+    content: '';
+    width: inherit;
+    position: relative;
+    top: 10px;
+    left: 0;
+    height: 10px;
+    display: block;
+    border-top: 5px solid;
+    border-color: maroon;
+}
+
+.credit {
+    margin-top: 3rem;
+}
+
+/*
+*****************
+* FONT AWESOME ICONS
+*****************
+*/
+.fa-facebook {
+    color: #3b5998;
+}
+
+.fa-twitter {
+    color: #00aced;
+}
+
+.fa-youtube {
+    color: #FF0000;
+}
+
+.fa-toilet-paper {
+    color: #ffffff
+}
+
+/*
+*****************
+* CAROUSEL
+*****************
+*/
+#carousel {
+    position: relative;
+}
+
+#carousel>figure>img {
+    display: none;
+    margin: 0px;
+    }
+
+#carousel>figure.visible>img {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    margin: 0px auto;
+    }
+
+#carousel>figure>figcaption {
+    display: none;
+    }
+
+#carousel>figure.visible>figcaption {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    }
+
+.carousel-buttons {
+    width: 100px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 90%;
+    z-index: 10;
+    font-size: 0px;
+    text-align: center;
+}
